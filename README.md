@@ -7,7 +7,7 @@ A JILI program consists of a single expression.
 The concrete syntax of the JILI expressions with these additional features can be captured with the following EBNFs.
 
   expr	 	=	 	num
- 	 	|	 	string
+    |	 	string
  	 	|	 	id
  	 	|	 	{if expr expr expr}
  	 	|	 	{var {[id : ty = expr] ...} in expr}
