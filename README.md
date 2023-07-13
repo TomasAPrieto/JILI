@@ -14,10 +14,14 @@ The concrete syntax of the JILI expressions with these additional features can b
  	 	|	 	{[id : ty] ... => expr}
  	 	|	 	{rec {id = {[id : ty] ... : ty => expr}} in expr}
  	 	|	 	{expr expr ...}
+
+    
   ty	 	=	 	num
  	 	|	 	bool
  	 	|	 	str
  	 	|	 	{ty ... -> ty}
+
+    
   operator	 	=	 	+
  	 	|	 	-
  	 	|	 	*
@@ -26,6 +30,8 @@ The concrete syntax of the JILI expressions with these additional features can b
  	 	|	 	str-eq?
  	 	|	 	<=
  	 	|	 	substring
+
+    
 ... where an id is not if, :, =, var, in, rec, =>, or ->
 
 # Try it out
